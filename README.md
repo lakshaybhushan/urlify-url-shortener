@@ -1,1 +1,1 @@
-[![urlify-banner](/images/urlify-banner.png)](https://urlify.lakshb.me/){:target="_blank"}
+<a href="https://urlify.lakshb.me/"><img src="/images/urlify-banner.png" alt="bitly-logo"/></a>
