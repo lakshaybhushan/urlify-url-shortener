@@ -140,3 +140,156 @@ img {
   color: #00483c;
   background: #c8f4da;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  button {
+    width: 120px;
+    height: 47px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .short-url-container {
+    flex-wrap: wrap;
+  }
+
+  .notification {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .container {
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  button {
+    width: 120px;
+    height: 47px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .short-url-container {
+    flex-wrap: wrap;
+  }
+
+  .notification {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-top: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  label {
+    font-size: 24px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .short-url-container a {
+    font-size: 16px;
+  }
+
+  .notification {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 2%;
+    right: unset;
+    left: 0;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  footer a {
+    margin-top: 5px;
+  }
+
+  .logos {
+    right: 1%;
+    bottom: 2%;
+  }
+
+  label:nth-child(1) {
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: 450;
+  }
+}

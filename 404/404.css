@@ -81,8 +81,24 @@ a:hover {
   .none {
     display: none;
   }
+
+  .container {
+    padding: 0 1em;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .lnks a {
+    margin-right: 10;
+  }
 }
 
-p {
-  line-height: 1.5em;
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
 }
