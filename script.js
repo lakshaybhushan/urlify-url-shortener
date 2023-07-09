@@ -1,3 +1,5 @@
+const apiKey = require('./config.js');
+
 // Function to shorten the URL
 function shortenUrl() {
     var longUrl = document.getElementById("longUrl").value;
@@ -11,7 +13,7 @@ function shortenUrl() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 4f493b05dc4f634b491d3fd2dda9451e4d7462af' // Replace with your Bitly API key
+            'Authorization': 'Bearer ${apiKey}'
         },
         body: JSON.stringify({
             long_url: longUrl
