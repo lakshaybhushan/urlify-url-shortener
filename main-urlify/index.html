@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/main-urlify/" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/images/urlify-logo.ico">
+  <title>urlify.</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>urlify.</h1>
+    <p>a super simple url shortener.</p>
+    <label> Link </label>
+    <br>
+    <input type="text" id="longUrl" placeholder="https://website.com" />
+    <br>
+    <button onclick="shortenUrl()">Create link</button>
+    <div id="shortUrlContainer" class="short-url-container"></div>
+    <div id="notification" class="notification"></div>
+  </div>
+
+  <div class="logos">
+    <label>powered by</label>
+    <br>
+    <img src="/images/bitly-logo.png" alt="bitly-logo" width="60" height="27" />
+
+    <img src="/images/netlify-logo.png" alt="netlify-logo" width="96" height="40" />
+  </div>
+
+  <footer>
+    made with :) by <a href="https://github.com/lakshaybhushan">lakshaybhushan</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

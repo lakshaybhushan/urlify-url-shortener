@@ -1,0 +1,88 @@
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: #FFF6ED;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2em;
+  max-width: 25em;
+}
+
+.forofour {
+  border: none;
+  opacity: 1;
+  color: #049379;
+}
+
+.forofour:hover {
+  opacity: 0.75;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.socials {
+  display: flex;
+}
+
+a {
+  color: #00A184;
+  text-decoration: none;
+  border-bottom: solid 1px #00A184;
+  opacity: 70%;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 100%;
+}
+
+::selection {
+  color: #00483c;
+  background: #c8f4da;
+}
+
+.lnks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-center;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+}
+
+.lnks a {
+  margin-right: 1em;
+  border: none;
+  color: #00A184;
+  margin-bottom: 0.8em;
+}
+
+.lnks a:hover {
+  color: #00A184;
+}
+
+@media (max-width: 750px) {
+  #app {
+    height: auto;
+    margin: 16.5vh 0;
+  }
+
+  .none {
+    display: none;
+  }
+}
+
+p {
+  line-height: 1.5em;
+}

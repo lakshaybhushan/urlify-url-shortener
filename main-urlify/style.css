@@ -1,0 +1,142 @@
+body {
+  font-family: 'Satoshi', sans-serif;
+  background: #FFF6ED;
+}
+
+.container {
+  justify-content: left;
+  padding-left: 180px;
+  padding-top: 90px;
+}
+
+h1 {
+  font-size: 160px;
+  color: #049379;
+  margin: 0;
+}
+
+p {
+  color: #2d9e89;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+label {
+  font-size: 30px;
+  color: #049379;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 850px;
+  height: 35px;
+  padding: 10px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 0.13rem solid #049379;
+  background-color: #FFF6ED;
+  color: #639289;
+  opacity: 1;
+}
+
+input::placeholder {
+  opacity: 0.7;
+  color: #639289
+}
+
+input[type=text]:focus {
+  outline: 1px solid #049379;
+}
+
+button {
+  width: 140px;
+  height: 57px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: #049379;
+  color: #FFF6ED;
+  border: none;
+  cursor: pointer;
+  font-family: 'Satoshi', sans-serif;
+  margin-top: 20px;
+  transition: background-color 0.25s ease-in;
+}
+
+button:hover {
+  background-color: #00b896;
+}
+
+.short-url-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.short-url-container a {
+  display: inline-block;
+  font-size: 20px;
+  color: #00CBA6;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.notification {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 18px;
+  color: #35a591;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  width: 100%;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 18px;
+  color: #639289;
+  position: fixed;
+  bottom: 3%;
+  text-align: center;
+}
+
+a {
+  color: #00A184;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logos {
+  position: fixed;
+  margin: 0%;
+  right: 2.5%;
+  bottom: 3%;
+}
+
+label:nth-child(1) {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+img {
+  margin-left: 5px;
+  margin-right: 5px;
+  align-items: center;
+}
+
+::selection {
+  color: #00483c;
+  background: #c8f4da;
+}
