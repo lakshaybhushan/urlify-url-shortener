@@ -1,1 +1,1 @@
-<a href="https://urlify.lakshb.me/"><img src="/images/urlify-banner.png" alt="bitly-logo"/></a>
+<a href="https://urlify.lakshb.me/" target=" _blank"><img src="/images/urlify-banner.png" alt="urlify-banner"/></a>
