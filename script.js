@@ -6,12 +6,17 @@ function shortenUrl() {
         return;
     }
 
+    // Check if URL starts with "http://" or "https://"
+    if (!longUrl.startsWith("http://") && !longUrl.startsWith("https://")) {
+        longUrl = "https://" + longUrl;
+    }
+
     // Make a POST request to the Bitly API
     fetch('https://api-ssl.bitly.com/v4/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 4f493b05dc4f634b491d3fd2dda9451e4d7462af' ,
+            'Authorization': 'Bearer 4f493b05dc4f634b491d3fd2dda9451e4d7462af',
         },
         body: JSON.stringify({
             long_url: longUrl
@@ -41,6 +46,13 @@ function shortenUrl() {
             console.error('Error:', error);
         });
 }
+
+// Add event listener for Enter key press
+document.getElementById("longUrl").addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        shortenUrl();
+    }
+});
 
 // Function to load the shortened URL from localStorage
 function loadShortUrl() {
