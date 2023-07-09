@@ -1,4 +1,4 @@
-const apiKey = require('./config.js');
+import apiKey from 'config.js';
 
 // Function to shorten the URL
 function shortenUrl() {
@@ -13,7 +13,7 @@ function shortenUrl() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ${apiKey}'
+            'Authorization': 'Bearer ' + apiKey,
         },
         body: JSON.stringify({
             long_url: longUrl
